@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <title>Address Book</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Here is a list of all of your contacts:</h1>
+            {% if contacts is not empty %}
+                {% for contact in contacts %}
+                  {% set address = contact.getAddress %}
+
+                  <h3> {{ contact.getName() }}</h3>
+                    <ul>
+                      <li>Phone: {{ contact.getPhone }}</li>
+                      <li>Address: {{ address.getFullAddress }}</li>
+                    </ul>
+                {% endfor %}
+            {% endif %}
+    </div>
+    <form action="/clear" method="post">
+        <button type="submit" name="button">Clear</button>
+    </form>
+    <a href="/new">Add a Contact</a><br>
+
+</body>
+</html>

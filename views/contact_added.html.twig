@@ -1,0 +1,19 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <title>Contact Added</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Congrats! You have added the following friend to your address book!</h1>
+
+        <h3>{{ contact.name }}</h3>
+            <p>{{ contact.phone }}</p>
+            {% set address = contact.getAddress %}
+            <p>{{ address.getFullAddress }}</p>
+
+    </div>
+    <a href="/list">Back to Contacts</a><br>
+
+</body>
+</html>

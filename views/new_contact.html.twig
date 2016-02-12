@@ -1,0 +1,35 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <title>New Contact</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add a New Contact</h1>
+        <form action="/show" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input id="phone" name="phone" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="street">Street Address:</label>
+                <input id="street" name="street" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input id="city" name="city" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input id="state" name="state" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn-success">Submit</button>
+        </form>
+        <a href="/list">View Existing Contacts</a>
+    </div>
+</body>
+</html>
