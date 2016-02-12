@@ -28,7 +28,7 @@
 
       $app->post("/clear", function() use ($app){
           Contact::reset();
-          return $app['twig']->render('address_book.html.twig', array('contacts' => Contact::getAll()));
+          return $app['twig']->render('deleted_contacts.html.twig', array('contacts' => Contact::getAll()));
       });
 
       $app->get("/list", function() use ($app){
