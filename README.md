@@ -20,7 +20,8 @@ This allows you to store contact information inputted, using session store.
 
 ## Known Bugs
 
-No known bugs.
+Warnings for Symphony "headers already sent..." and "timezone", no effect on actual application code.s
+
 
 ## Support and contact details
 
