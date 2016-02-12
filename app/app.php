@@ -31,10 +31,6 @@
           return $app['twig']->render('deleted_contacts.html.twig', array('contacts' => Contact::getAll()));
       });
 
-      $app->get("/list", function() use ($app){
-          return $app['twig']->render('address_book.html.twig', array('contacts' => Contact::getAll()));
-      });
-
       $app->get("/new", function() use ($app){
           return $app['twig']->render('new_contact.html.twig');
       });
